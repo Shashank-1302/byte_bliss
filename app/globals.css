@@ -2,32 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-image: url("https://media.licdn.com/dms/image/C4E12AQE5UujRGMChuw/article-cover_image-shrink_720_1280/0/1554907990201?e=1719446400&v=beta&t=oZzk4GOk1jRogUcPZbCp0262hp9ypRH9THzQqyiF-OE");
+  background-size: cover;
+  color: #1a0f0f;
+  background-position: 40%;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  height: 200px;
+  z-index: 1000;
 }
